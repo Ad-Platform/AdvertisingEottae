@@ -10,8 +10,13 @@ repositories {
 }
 
 dependencies {
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter', version: '1.5.13.RELEASE'
     compileOnly('com.fasterxml.jackson.core:jackson-databind')
     compileOnly('com.fasterxml.jackson.dataformat:jackson-dataformat-xml')
+
+    compile('org.springframework.boot:spring-boot-starter-aop')
+    compile('org.springframework.boot:spring-boot-starter-web')
+    compile('org.springframework.boot:spring-boot-starter-actuator')
 
     // logging
     compileOnly('ch.qos.logback:logback-classic')
