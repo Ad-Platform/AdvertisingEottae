@@ -1,0 +1,15 @@
+spring:
+  kafka:
+    bootstrap-servers: localhost:9092
+    producer:
+      bootstrap-servers: localhost:9092
+      client-id: kafka
+
+producer:
+  topic: ad-macketing
+
+logging:
+  level:
+    root: ERROR
+    org.springframework.web: ERROR
+    com.memorynotfound: DEBUG

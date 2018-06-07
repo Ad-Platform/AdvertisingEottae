@@ -10,19 +10,25 @@ repositories {
 }
 
 dependencies {
-    compile group: 'org.springframework.boot', name: 'spring-boot-starter', version: '1.5.13.RELEASE'
+    compile('org.springframework.boot:spring-boot-starter:2.0.2.RELEASE')
     compileOnly('com.fasterxml.jackson.core:jackson-databind')
     compileOnly('com.fasterxml.jackson.dataformat:jackson-dataformat-xml')
 
-    compile('org.springframework.boot:spring-boot-starter-aop')
-    compile('org.springframework.boot:spring-boot-starter-web')
-    compile('org.springframework.boot:spring-boot-starter-actuator')
+    compile('org.springframework.boot:spring-boot-starter-aop:2.0.2.RELEASE')
+    compile('org.springframework.boot:spring-boot-starter-web:2.0.2.RELEASE')
+    compile('org.springframework.boot:spring-boot-starter-actuator:2.0.2.RELEASE')
 
     // logging
     compileOnly('ch.qos.logback:logback-classic')
     compileOnly('commons-codec:commons-codec')
     compileOnly('commons-lang:commons-lang')
     compileOnly('commons-logging:commons-logging')
+
+    //kafka
+    compile('org.springframework.kafka:spring-kafka:2.1.5.RELEASE')
+
+    compile('org.springframework.boot:spring-boot-starter-web-services:2.0.2.RELEASE')
+    compile('org.springframework.boot:spring-boot-devtools:2.0.2.RELEASE')
 
     // lombok
     compile('org.projectlombok:lombok:1.16.16')
