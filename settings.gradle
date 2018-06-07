@@ -1,0 +1,4 @@
+rootProject.name = 'ads'
+include 'producer'
+include 'consumer'
+

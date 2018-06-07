@@ -1,0 +1,37 @@
+.gradle
+/build/
+!gradle/wrapper/gradle-wrapper.jar
+*.tgz
+config*.js
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+*/out/
+*/target/
+*.orig
+
+### NetBeans ###
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
+
+bin/
+.class
+*.class
+logs/
+*.log
+commit-hash
